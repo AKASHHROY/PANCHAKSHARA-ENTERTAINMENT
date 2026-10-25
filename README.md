@@ -1,3 +1,3 @@
-# Panchakshara Entertainment OTT prototype
-Upload `index.html` to the root of your `PANCHAKSHARA-ENTERTAINMENT` GitHub repository, replacing the previous `index.html`, then commit the change.
-This is a front-end demo only. Real user accounts, secure creator permissions, server-side video uploads/storage and payment verification still need backend integration.
+# Panchakshara Entertainment OTT prototype — logo update
+Upload `index.html` and the `assets` folder to the root of your GitHub repository. Keep the relative path `assets/panchakshara-logo.png` unchanged. Commit the changes and refresh the published site.
+This is still a front-end prototype; real cloud video uploads, authentication, creator approval, database and payment enforcement are not yet connected.
