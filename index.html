@@ -20,7 +20,62 @@ footer{padding:25px 5vw;border-top:1px solid #ffffff12;color:#858da4;font-size:1
 .modal{position:fixed;inset:0;background:#000c;z-index:10;display:flex;align-items:center;justify-content:center;padding:18px}.modal-box{width:min(900px,100%);background:#111522;border:1px solid #353c52;border-radius:18px;overflow:hidden;max-height:90vh;overflow-y:auto}.modal-top{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}.modal video{display:block;width:100%;max-height:60vh;background:black}.modal-info{padding:20px}.modal-info p{color:#b6bfd4;line-height:1.6}
 @media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.poster{height:160px}.hero{min-height:320px}.stats{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.discover-tools{grid-template-columns:1fr}.story-strip{grid-template-columns:1fr}header{padding:0 4vw;height:64px}.brand{font-size:19px}nav{gap:0}nav button{font-size:12px;padding:8px}.grid{gap:10px}.poster{height:135px}.card-body{padding:10px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{padding:24px}.section-head h2{font-size:20px}}
-.brand-lockup{display:flex;align-items:center;gap:10px;text-decoration:none;color:#f4f6ff;font-size:clamp(12px,1.7vw,19px);font-weight:900;letter-spacing:.65px;white-space:nowrap}.brand-lockup img{width:42px;height:42px;object-fit:contain;border-radius:50%;background:#fff}.brand-lockup b{color:var(--cyan)}@media(max-width:520px){.brand-lockup{font-size:10px;gap:6px;letter-spacing:0}.brand-lockup img{width:32px;height:32px}}\n</style>
+
+/* Panchakshara Entertainment — Indian OTT visual upgrade */
+:root{--bg:#050b18;--panel:#0b1630;--panel2:#10254a;--text:#f4f8ff;--muted:#a6b8d6;--cyan:#40c4ff;--purple:#527dff;--line:#203b66;--pink:#4e9bff;--gold:#ffcc72}
+body{background:radial-gradient(ellipse at 80% -10%,#153e80 0,transparent 38%),radial-gradient(ellipse at 0% 28%,#082c53 0,transparent 34%),linear-gradient(180deg,#050b18,#071125 55%,#050b18);color:var(--text)}
+header{height:78px;padding:0 5vw;border-bottom:1px solid #62b7ff28;background:#061126e8;box-shadow:0 8px 32px #0004}
+.brand-lockup{display:flex;align-items:center;gap:11px;text-decoration:none;color:#f4f8ff;font-size:clamp(12px,1.55vw,18px);font-weight:950;letter-spacing:.65px;white-space:nowrap}
+.brand-lockup img{width:48px;height:48px;object-fit:contain;border-radius:50%;background:#fff;box-shadow:0 0 0 2px #4fc3ff45,0 0 25px #2b9cff35}
+.brand-lockup b{display:block;color:#50caff;font-size:.76em;letter-spacing:2px;margin-top:2px}
+nav button{border-radius:10px;transition:background .25s,color .25s,transform .25s}
+nav button:hover{transform:translateY(-2px);background:#163460;color:white}
+main{max-width:1320px;padding-top:30px}
+.hero{min-height:410px;border:1px solid #67baff3b;border-radius:24px;padding:clamp(28px,5vw,64px);background:linear-gradient(105deg,#07142af7 0%,#0b2b50e8 46%,#174a82c9 100%);box-shadow:0 24px 80px #0007;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#07142a 0%,#07142acc 44%,transparent 100%),radial-gradient(circle at 83% 50%,#2c9bff60,transparent 35%);animation:heroGlow 8s ease-in-out infinite alternate}
+.hero:after{content:"✦";right:8%;font-size:clamp(180px,27vw,320px);color:#74cfff12;transform:rotate(-8deg);text-shadow:0 0 70px #3daaff33;animation:floatMark 7s ease-in-out infinite}
+.hero h1{letter-spacing:-2px;text-shadow:0 6px 35px #0007}
+.hero p{color:#c4d9f3}
+.eyebrow{color:#62d5ff}
+.hero-actions button{box-shadow:0 8px 26px #2c9fff25;transition:transform .25s,box-shadow .25s,filter .25s}
+.hero-actions button:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 12px 32px #2c9fff45;filter:brightness(1.08)}
+button{background:linear-gradient(120deg,#42c8ff,#477bff);color:#061126}
+button.secondary{background:#102344;color:#e9f5ff;border:1px solid #2c568b}
+.story-tile,.panel,.stat{background:linear-gradient(145deg,#0d1b35,#0a1429);border-color:#24446f;box-shadow:0 12px 32px #0002}
+.story-tile{position:relative;overflow:hidden;transition:transform .28s,border-color .28s,box-shadow .28s}
+.story-tile:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,#258dff10,transparent 60%);pointer-events:none}
+.story-tile:hover{transform:translateY(-4px);border-color:#4bcaff8a;box-shadow:0 15px 38px #0005}
+.chips{gap:9px}
+.chip{background:#0b1b34;border-color:#24466f;color:#c5d8f4;transition:all .22s}
+.chip:hover{border-color:#52c9ff;color:white;transform:translateY(-1px)}
+.chip.active{background:linear-gradient(120deg,#45ceff,#527dff);color:#051225;box-shadow:0 5px 22px #2b9dff35}
+.discover-tools input,.discover-tools select,.field input,.field select,.field textarea{background:#071226;border-color:#294a76;color:#f4f8ff}
+.discover-tools input:focus,.discover-tools select:focus,.field input:focus,.field select:focus,.field textarea:focus{border-color:#52caff;box-shadow:0 0 0 3px #40c4ff19}
+.card{background:linear-gradient(180deg,#0c1830,#091225);border-color:#1e3a61;box-shadow:0 8px 24px #0002;transition:transform .32s cubic-bezier(.2,.8,.2,1),border-color .32s,box-shadow .32s}
+.card:hover{transform:translateY(-7px) scale(1.018);border-color:#4dc9ffb0;box-shadow:0 18px 46px #0008,0 0 0 1px #3cbfff19}
+.poster{background-color:#0b2346}
+.poster:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#06112680,transparent 55%);pointer-events:none}
+.poster img{transition:transform .6s cubic-bezier(.2,.8,.2,1);position:relative;z-index:0}
+.card:hover .poster img{transform:scale(1.07)}
+.tag{z-index:1;backdrop-filter:blur(8px);border:1px solid #ffffff20}
+.tag.free{background:#07382fdf;color:#7dfbd1}.tag.paid{background:#423014e8;color:#ffd58a}
+.card-desc{color:#b5c8e7}
+.section-head h2{letter-spacing:-.45px}
+.modal{backdrop-filter:blur(10px)}
+.modal-box{background:#08142a;border-color:#2c568b;box-shadow:0 25px 90px #000b}
+.modal-top{border-bottom-color:#25466f}
+.note{background:#0a2034;border-color:#245b78;color:#b8dff3}
+footer{border-top-color:#203c65;color:#91a9cb}
+@keyframes heroGlow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.025)}}
+@keyframes floatMark{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-12px) rotate(-3deg)}}
+@keyframes enterUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.hero-copy{animation:enterUp .7s ease-out both}
+.story-tile{animation:enterUp .6s ease-out both}
+.story-tile:nth-child(2){animation-delay:.08s}.story-tile:nth-child(3){animation-delay:.16s}
+@media(max-width:520px){header{height:68px}.brand-lockup{font-size:10px;gap:7px;letter-spacing:0}.brand-lockup img{width:36px;height:36px}.brand-lockup b{letter-spacing:1px}.hero{min-height:330px}.hero h1{letter-spacing:-1px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+</style>
 </head>
 <body>
 <header><a class="brand-lockup" href="#" onclick="showView('home');return false" aria-label="Panchakshara Entertainment home"><img src="assets/panchakshara-logo.png" alt="Panchakshara Entertainment logo"><span>PANCHAKSHARA <b>ENTERTAINMENT</b></span></a><nav><button id="homeTab" class="active" onclick="showView('home')">Discover</button><button id="adminTab" onclick="showView('admin')">Creator Studio</button></nav></header>
