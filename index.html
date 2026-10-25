@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VYBE — Your stories. Your screen.</title>
+<title>Panchakshara Entertainment — Your stories. Your screen.</title>
 <style>
 :root{--bg:#090b12;--panel:#121624;--panel2:#191f31;--text:#f4f6ff;--muted:#a3abc1;--cyan:#66e3ff;--purple:#9a7cff;--line:#292f43;--pink:#ff5da8}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -15%,#292054 0,transparent 38%),radial-gradient(ellipse at 0% 20%,#103040 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
@@ -23,7 +23,7 @@ footer{padding:25px 5vw;border-top:1px solid #ffffff12;color:#858da4;font-size:1
 </style>
 </head>
 <body>
-<header><div class="brand">VYBE<span>+</span></div><nav><button id="homeTab" class="active" onclick="showView('home')">Discover</button><button id="adminTab" onclick="showView('admin')">Creator Studio</button></nav></header>
+<header><div class="brand" style="letter-spacing:1px;font-size:clamp(15px,2.2vw,23px)">PANCHAKSHARA <span>ENTERTAINMENT</span></div><nav><button id="homeTab" class="active" onclick="showView('home')">Discover</button><button id="adminTab" onclick="showView('admin')">Creator Studio</button></nav></header>
 <main>
 <section id="homeView">
 <div class="hero"><div class="hero-copy"><div class="eyebrow">A new home for stories</div><h1>Stories worth<br><span style="color:var(--cyan)">staying up for.</span></h1><p>Your independent streaming universe. Discover films, series and creator-led stories in one place.</p><div class="hero-actions"><button onclick="document.getElementById('library').scrollIntoView({behavior:'smooth'})">Explore library&nbsp; →</button><button class="secondary" onclick="showView('admin')">Open Creator Studio</button></div></div></div>
@@ -48,11 +48,11 @@ footer{padding:25px 5vw;border-top:1px solid #ffffff12;color:#858da4;font-size:1
 <div class="section-head"><div><h2>Manage titles</h2><p>Remove demo titles from this browser.</p></div></div><div id="manageList"></div>
 </section>
 </main>
-<footer>VYBE+ · Independent stories, one screen at a time · Prototype build 0.1</footer>
+<footer>PANCHAKSHARA ENTERTAINMENT · Independent stories, one screen at a time · Prototype build 0.2</footer>
 <div id="playerModal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-box"><div class="modal-top"><b id="modalTitle">Now playing</b><button class="secondary" onclick="closePlayer()">✕ Close</button></div><video id="player" controls playsinline></video><div class="modal-info"><div class="meta" id="modalMeta"></div><p id="modalDesc"></p><div id="payNotice" class="note hidden">This title is marked Premium in the prototype. Real subscription access controls are not connected yet.</div></div></div></div>
 <script>
 const seed = [
-{id:'sample1',title:'Beyond the Blue',kind:'Movie',access:'Free',creator:'VYBE Originals',description:'A young traveller returns to the coast and discovers that home can be a story still waiting to be told.',emoji:'🌊',gradient:'linear-gradient(145deg,#123e5b,#5b4b8b)',sample:true},
+{id:'sample1',title:'Beyond the Blue',kind:'Movie',access:'Free',creator:'Panchakshara Originals',description:'A young traveller returns to the coast and discovers that home can be a story still waiting to be told.',emoji:'🌊',gradient:'linear-gradient(145deg,#123e5b,#5b4b8b)',sample:true},
 {id:'sample2',title:'City After Dark',kind:'Series',access:'Premium',creator:'Indie Frame',description:'Every night reveals a new secret in a city that never really sleeps.',emoji:'🌃',gradient:'linear-gradient(145deg,#152341,#8e315c)',sample:true},
 {id:'sample3',title:'The Making Of',kind:'Documentary',access:'Free',creator:'Frame by Frame',description:'A behind-the-scenes look at the people, choices and craft behind independent cinema.',emoji:'🎬',gradient:'linear-gradient(145deg,#45321c,#a25b38)',sample:true},
 {id:'sample4',title:'Last Train Home',kind:'Short Film',access:'Premium',creator:'Northlight Studio',description:'Two strangers share one final train ride—and a conversation that changes everything.',emoji:'🚆',gradient:'linear-gradient(145deg,#163b37,#2b6b79)',sample:true}
